@@ -1,0 +1,33 @@
+<div class="kanji">{{Kanji}}</div>
+<div class="answer">{{Meaning}}</div>
+<br />
+<table class="readings">
+   {{#Onyomi}}
+   <tr>
+      <td class="hint-style">Onyomi: {{Onyomi}}</td>
+   </tr>
+   {{/Onyomi}} {{#Kunyomi}}
+   <tr>
+      <td class="hint-style kunyomi">Kunyomi: {{Kunyomi}}</td>
+   </tr>
+   {{/Kunyomi}}
+</table>
+
+<br />
+<div class="sentence">{{furigana:Sentence}}</div>
+{{#Sentence_Translation}}
+<div id="hint" class="hidden">
+   <p class="trigger hint-style link">Show Translation</p>
+   <p class="payload hint-style" style="color: tan">{{Sentence_Translation}}</p>
+</div>
+<script>
+   var hint = document.getElementById('hint');
+   hint.addEventListener('click', function () {
+      this.setAttribute('class', 'shown');
+   });
+</script>
+{{/Sentence_Translation}}<br />
+
+<br />
+<div class="story">{{Story}}</div>
+<br />

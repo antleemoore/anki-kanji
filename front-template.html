@@ -1,0 +1,18 @@
+<div class="kanji">{{Kanji}}</div>
+
+{{#Kanji}}
+<div id="hint" class="hidden">
+   <p class="trigger hint-style link">Show Readings</p>
+   {{#Onyomi}}
+   <p class="payload hint-style">{{Onyomi}}</p>
+   {{/Onyomi}} {{#Kunyomi}}
+   <p class="payload hint-style">{{Kunyomi}}</p>
+   {{/Kunyomi}}
+</div>
+<script>
+   var hint = document.getElementById('hint');
+   hint.addEventListener('click', function () {
+      this.setAttribute('class', 'shown');
+   });
+</script>
+{{/Kanji}}

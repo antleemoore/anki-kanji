@@ -1,0 +1,66 @@
+/* START card defaults */
+.card {
+   font-family: arial;
+   font-size: 30px;
+   text-align: center;
+   color: black;
+   background-color: white;
+}
+p {
+   padding: 0;
+   margin: 0;
+}
+/* END card defaults */
+
+/* START show/hide hints */
+.hint-style {
+   font-size: 20px;
+   color: lightyellow;
+}
+#hint.hidden:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+#hint.hidden .payload,
+#hint.shown .trigger,
+.mobile #hint.shown .trigger,
+.mobile #hint.hidden .trigger {
+   display: none;
+}
+
+#hint.shown .payload,
+.mobile #hint.hidden .payload,
+.mobile #hint.shown .payload {
+   display: block;
+}
+
+/* END show/hide hints */
+
+/* START custom styles */
+.story {
+   font-size: 20px;
+   color: lightyellow;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding: 1em;
+}
+.sentence {
+   font-size: 25px;
+   color: tan;
+}
+.kanji {
+   font-size: 100px;
+   color: lightyellow;
+}
+.readings {
+   margin-left: auto;
+   margin-right: auto;
+}
+.answer {
+   color: lightgreen;
+}
+.link {
+   color: lightblue;
+}
+/* END custom styles */
