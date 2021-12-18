@@ -1,5 +1,3 @@
 Japanese Support
-No Penalties or Boosting
-PassFail (EN)
-ResetEZ
+Low Key Anki
 Review Heatmap
